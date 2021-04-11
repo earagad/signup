@@ -8,7 +8,7 @@ const bodyParser = require("body-parser");
 const https = require("https");
 
 
-app.use("/public", express.static(path.join(__dirname, "public")));
+app.use("/public", express.static("public"));
 app.use(bodyParser.urlencoded({
 	extended: true
 }));
