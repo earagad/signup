@@ -1,16 +1,16 @@
 
 const express = require("express");
 const app = express();
-app.use(express.static("public"));
-app.use(bodyParser.urlencoded({
-	extended: true
-}));
+
 
 const bodyParser = require("body-parser");
 // const request = require("request");
 const https = require("https");
 
-
+app.use(express.static("public"));
+app.use(bodyParser.urlencoded({
+	extended: true
+}));
 
 
 // require mailchimp
