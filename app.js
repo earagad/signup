@@ -13,7 +13,7 @@ const app = express();
 // app.use(express.static(path.join(process.env.PWD, 'public')));
 
 
-app.use(express.static(__dirname + "/Public"));
+app.use(express.static("Public"));
 app.use(bodyParser.urlencoded({
 	extended: true
 }));
