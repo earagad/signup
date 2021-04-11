@@ -7,13 +7,13 @@ const https = require("https");
 
 const app = express();
 
-var path = require('path')
+// var path = require('path')
 
 // process.env.PWD = process.cwd();
 // app.use(express.static(path.join(process.env.PWD, 'public')));
 
 
-app.use(express.static(__dirname + "public"));
+app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.urlencoded({
 	extended: true
 }));
