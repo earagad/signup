@@ -13,7 +13,7 @@ var path = require('path')
 // app.use(express.static(path.join(process.env.PWD, 'public')));
 
 
-app.use(express.static("public"));
+app.use(express.static(__dirname + "public"));
 app.use(bodyParser.urlencoded({
 	extended: true
 }));
