@@ -7,9 +7,7 @@ const bodyParser = require("body-parser");
 // const request = require("request");
 const https = require("https");
 
-app.use(express.static("public"));
-app.use(express.static("CSS"));
-app.use(express.static("Images"));
+// app.use(express.static("public"));
 app.use(bodyParser.urlencoded({
 	extended: true
 }));
