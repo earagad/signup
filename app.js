@@ -42,7 +42,7 @@ app.get("/", function(req, res) {
 // HTML form
 app.post("/", function(req, res) {
 
-	const listId = "1fb612e81c";
+	const listId = process.env.AUDIENCE_ID;
 	const firstName = req.body.fName;
 	const lastName = req.body.lName;
 	const email = req.body.email;
